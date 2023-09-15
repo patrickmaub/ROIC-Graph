@@ -2,7 +2,7 @@ import os
 import openai
 from vars import configs
 from gpt_executable import execute_code
-openai.api_key = "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"
+openai.api_key = os.getenv("OPEN_AI_KEY")
 
 
 def get_symbols(text):
